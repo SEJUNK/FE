@@ -43,7 +43,7 @@ function Patterns() {
         <header className="mt-8 max-w-2xl">
           <p className="eyebrow">Raw data → insight</p>
           <h1 className="mt-2 font-display text-4xl leading-[1.05] tracking-tight md:text-5xl">
-            The habits the person never wrote down.
+            The patterns the archive reveals.
           </h1>
           <p className="mt-4 text-sm leading-relaxed text-muted md:text-base">
             Nothing here is a field in the data. Every number below was found by reading the three archives against each

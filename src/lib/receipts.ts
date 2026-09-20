@@ -189,7 +189,7 @@ export const chapters: Chapter[] = CHAPTER_DEFS.map((def, i) => {
   const places = new Set(items.filter((r) => r.place).map((r) => r.place as string)).size;
 
   const headlines = [
-    "A handful of plays, a web player, and nobody watching.",
+    "A sparse opening: a handful of plays in the earliest recorded period.",
     `${plays.toLocaleString()} plays later, a taste starts to hold its shape.`,
     "The single loudest stretch in eleven years of records.",
     `₹${spend.toLocaleString()} of ordinary days — milk, autos, snacks, a train ticket.`,
@@ -198,11 +198,11 @@ export const chapters: Chapter[] = CHAPTER_DEFS.map((def, i) => {
   ];
   const narrations = [
     "The earliest fragments are thin: a few dozen songs on a borrowed web player in mid-2013, then almost nothing for a year. Whoever this is, they weren't recording their life yet — they were just pressing play.",
-    "Two years of steady growth. Listening rises from a trickle to thousands of plays, artists repeat for the first time, and the first genuine favourites appear. Nothing else in the archive is moving yet — no spending, no places. Only sound.",
+    "Two years of steady growth. Listening rises from a trickle to thousands of plays, with artists beginning to recur in the archive. Nothing else in the archive is moving yet — no spending, no places. Only sound.",
     "Everything spikes here. This is the peak listening year of the entire archive, and the other datasets wake up alongside it: a ledger of purchases begins, subscriptions appear, trains start showing up. The life gets busier and louder in the same breath.",
-    "The most human stretch in the data. Hundreds of tiny expenses — milk, tea, idli, an auto, a mobile top-up — sit beside playlists and a Netflix subscription. The receipts are small, which is exactly why they add up to a portrait.",
-    "Then the ledger stops almost entirely. For two years the only thing this person leaves behind is music — mostly after midnight, mostly alone. No trains, no cities, barely a purchase slip. The absence of receipts is the story here.",
-    "The last chapter reverses the trend: fewer plays every year, but more cities, more travel swipes, more geotagged photos. Attention moves from the headphones back out to the world.",
+    "A dense everyday stretch in the archive. Hundreds of tiny expenses — milk, tea, idli, an auto, a mobile top-up — sit beside playlists and a Netflix subscription. The receipts are small, which is exactly why they add up to a portrait.",
+    "Then the ledger stops almost entirely. For two years, the available records are dominated by music — with a large share of listening occurring after midnight. No trains, no cities, barely a purchase slip. The absence of other recorded activity is itself a visible pattern in these archives.",
+    "The last chapter shows fewer plays alongside more cities and travel-related records in the available card archive.",
   ];
   const signatures = [
     `${items.length} fragments · web player era`,
@@ -394,14 +394,14 @@ export const patterns: Pattern[] = (() => {
       id: "small-things",
       label: "A life of small amounts",
       value: `${foodTags.toLocaleString()}`,
-      body: `Food receipts outnumber every other kind of spending — including ${milk} separate entries for milk and ${autos} auto rides. Nothing dramatic ever happens, and that is the portrait.`,
+      body: `Food receipts outnumber every other kind of spending — including ${milk} separate entries for milk and ${autos} auto rides. Small, repeated transactions form a detailed everyday record.`,
       accent: "gold",
     },
     {
       id: "attention-shift",
       label: "Attention moved",
       value: `${secondHalf > firstHalf ? "+" : "−"}${Math.abs(Math.round(((secondHalf - firstHalf) / firstHalf) * 100))}%`,
-      body: `Listening in the later years (2019–2024) versus the earlier ones (2013–2018). The headphones got quieter as the travel receipts multiplied.`,
+      body: `Listening in the later years (2019–2024) versus the earlier ones (2013–2018). Listening declines while travel-related records appear more often in the later archive.`,
       accent: "violet",
     },
     {

@@ -19,7 +19,7 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Receipts of a Life — a story hidden in 5,500 digital fragments" },
+      { title: "Receipts of a Life — a story hidden in 5,531 curated fragments" },
       {
         name: "description",
         content:
@@ -86,7 +86,7 @@ function Overture() {
                 {stats.musicPlaysTotal.toLocaleString()} songs, {stats.typeCounts["purchase"]} purchase slips,{" "}
                 {totalPlaces} places and a stack of private notes. Alone they are noise. Put a night-time song beside a
                 train ticket and a scribbled receipt note and they become{" "}
-                <span className="text-cloud">a chapter of someone&apos;s life</span>.
+                <span className="text-cloud">a connected moment in the archive</span>.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link
@@ -232,7 +232,7 @@ function Overture() {
             <div className="flex flex-wrap items-end justify-between gap-3">
               <div>
                 <p className="eyebrow">What the data keeps repeating</p>
-                <h2 className="mt-1 font-display text-2xl tracking-tight">Six patterns nobody noticed</h2>
+                <h2 className="mt-1 font-display text-2xl tracking-tight">Six patterns the archive reveals</h2>
               </div>
               <Link
                 to="/patterns"

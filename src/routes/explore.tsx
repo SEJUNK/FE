@@ -75,6 +75,7 @@ function Explore() {
         <div className="mt-6 rounded-3xl border border-white/10 bg-white/[0.05] p-5 backdrop-blur-xl">
           <div className="flex flex-col gap-3 md:flex-row md:items-center">
             <input
+              aria-label="Search the archive"
               value={search["q"]}
               onChange={(e) => update({ q: e.target.value })}
               placeholder="Search songs, places, notes, merchants…"
@@ -91,6 +92,7 @@ function Explore() {
                 After midnight
               </button>
               <select
+                aria-label="Filter by chapter"
                 value={search["chapter"]}
                 onChange={(e) => update({ chapter: e.target.value })}
                 className="rounded-full border border-white/15 bg-ink2/80 px-4 py-2 text-xs text-cloud outline-none"
